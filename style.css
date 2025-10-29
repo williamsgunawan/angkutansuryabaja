@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Navbar Styles === */
+/* === Navbar Container (Improved) === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 5%; /* changed from 40px to % for flexibility */
+  color: white;
+  box-sizing: border-box; /* ensures padding doesn’t overflow width */
+  transition: top 0.4s ease;
+  z-index: 1000;
+}
+
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: orange;
+}
+
+/* === Responsive (for mobile) === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
