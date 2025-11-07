@@ -248,7 +248,7 @@ h1 {
   opacity: 0.8;
 }
 
-.armada-heading {
+.section-heading {
   font-size: 5vw;
   padding-left: 8vw;
 }
@@ -337,6 +337,41 @@ h1 {
   background-image: url('assets/trailer.png');
   background-size: cover;
   background-position: center;
+}
+
+.clients {
+  margin: 50px 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: #011d58;
+  text-align: center;
+}
+
+.clients h1 {
+  color: white;
+  font-size: 5vw;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.client-card {
+  background-color: white;
+  border: solid black;
+  border-width: 20px 15px 20px 15px;
+  width: 8vw;
+  height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card img {
+  width: 100%;
 }
 
 /* === Responsive (for mobile) === */
